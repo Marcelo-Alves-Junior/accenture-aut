@@ -1,0 +1,28 @@
+{
+  "name": "accenture-aut",
+  "version": "1.0.0",
+  "description": "Desafio de automação de testes utilizando Cypress, TypeScript e Cucumber.",
+  "private": true,
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "cypress",
+    "typescript",
+    "cucumber",
+    "qa",
+    "automation"
+  ],
+  "author": "Marcelo Alves Junior",
+  "license": "MIT",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^26.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@types/node": "^26.1.2",
+    "cypress": "^15.19.0",
+    "esbuild": "^0.28.1",
+    "typescript": "^7.0.2"
+  }
+}

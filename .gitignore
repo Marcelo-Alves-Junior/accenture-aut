@@ -1,0 +1,26 @@
+# Dependências instaladas
+node_modules/
+
+# Evidências geradas pelo Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Relatórios
+reports/
+cypress/reports/
+
+# Variáveis sensíveis
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Configurações pessoais
+.vscode/
+
+# Arquivos do Windows e macOS
+Thumbs.db
+.DS_Store
