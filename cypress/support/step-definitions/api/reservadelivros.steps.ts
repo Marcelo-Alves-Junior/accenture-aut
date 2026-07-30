@@ -118,23 +118,22 @@ When(
   
 
 Then(
-  "os detalhes do usuário devem constar os dois livros",
-  () => {
-    return cy.request({
-      method: "GET",
-      url: `/Account/v1/User/${userId}`,
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }).then((resposta) => {
-        const isbnsRetornados =
-        resposta.body.books.map(
-          (livro: { isbn: string }) =>
-            livro.isbn,
-        );
-
-      expect(isbnsRetornados)
-        .to.have.members(isbns);
-    });
-  },
+    "os detalhes do usuário devem constar os dois livros",
+    () => {
+        return cy.request({
+            method: "GET",
+            url: `/Account/v1/User/${userId}`,
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
+        }).then((resposta) => {
+            const isbnsRetornados =
+            resposta.body.books.map(
+                (livro: { isbn: string }) =>
+                    livro.isbn,
+            );
+            expect(isbnsRetornados)
+            .to.have.members(isbns);
+        });
+    },
 );
